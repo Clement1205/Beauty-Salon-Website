@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+    <head>
+        <meta charset="utf-8">
+        <title>Account Login - Attractive Beauty Salon</title>
+        <link rel="stylesheet" href="http://localhost/GroupProject/design.css">
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <head>
+        <title>Staff Reply</title>
+
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+          }
+      
+          h1 {
+            text-align: center;
+          }
+        </style>
+
+        <script>
+          function clearTextBox() {
+            document.getElementById("client-name").value = "";
+            document.getElementById("review").value = "";
+          }
+        </script>
+      </head>
+
+      <body>
+        <h1>Staff Reply to Client Reviews</h1>
+      
+        <div class="review-container">
+          <div class="review">
+            <p class="author">John Doe</p>
+            <p class="date">April 3, 2024</p>
+            <p class="content">I had an amazing experience at the beauty salon! The staff was friendly and professional, and the service was top-notch. I highly recommend their facials.</p>
+          </div>
+      
+          <div class="review">
+            <p class="author">Jane Smith</p>
+            <p class="date">March 28, 2024</p>
+            <p class="content">I've been a regular customer at the salon for over a year, and I'm always satisfied with the results. The stylists are talented and listen to my preferences. Love this place!</p>
+          </div>
+      
+          <div class="review">
+            <p class="author">Sarah Johnson</p>
+            <p class="date">March 20, 2024</p>
+            <p class="content">I visited the salon for a haircut, and I'm thrilled with the outcome. The stylist understood exactly what I wanted and delivered beyond my expectations. Thank you!</p>
+          </div>
+        </div>
+      
+        <div class="reply-form">
+          <h2>Reply to Review</h2>
+          <div class="form-row">
+            <label for="client-name">Client Name:</label>
+            <input style="background-color: black; color: white; border: 1px solid #aaa; width:80%; height:40px; margin-bottom: 20px; font-size: 18px;" type="text" id="client-name" name="client-name"  placeholder="Client Name*" required>
+          </div>
+          <div class="form-row">
+            <label for="review">Review:</label>
+            <input style="background-color: black; color: white; border: 1px solid #aaa; width:80%; height:40px; margin-bottom: 20px; font-size: 18px;" type="text" id="Review" name="Review"  placeholder="Review*" required>
+          </div>
+          <div class="form-row">
+            <button type="submit" onclick="clearTextBox()">Submit Reply</button>
+          </div>
+        </div>
+        <table align="center">
+          <tr>
+            <td><button class="book_now" onclick="location.href='http://localhost/GroupProject/staff_main_page.html'" type="button" style="width: 200px; height: 100px; margin-top: 30px; margin-bottom: 10px;">Previous page</button></td>
+        </table>
+      </body>
+</html>

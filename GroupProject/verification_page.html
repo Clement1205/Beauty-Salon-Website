@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Account Login - Attractive Beauty Salon</title>
+        <link rel="stylesheet" href="http://localhost/GroupProject/particle.css">
+    </head>
+    <body>
+        <div>
+            <div class="col-3"><br></div>
+            <div class="col-6 container" style="text-align: center; background-color: black; height: 99vh; position: relative;";>
+                <div class="vertical-center" style="background-color: black; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); margin-left: auto; margin-right: auto; left: 0; right: 0; border: 2.5px solid white; padding: 50px; padding-bottom: 20px; border-radius: 100px; z-index: 1;">
+                    <h1 style=" margin: 15px; color: white; font-family: stylishFont1;">Verify your email</h1>
+                    <h2 style=" margin: 15px; color: #aaa; font-family: stylishFont1;">The verification link has been sent to the designated email address. Please enter the verification code below to verify your email.</h2>
+        
+                    <form>
+                        <input style="background-color: black; color: white; border: 1px solid #aaa; width:80%; height:40px; margin-bottom: 20px; font-size: 18px;" type="number" id="vCode" name="vCode"  placeholder="Verification Code:" required>
+                    </form>
+                    <a onclick="message()" style="color: white; font-family: stylishFont1; font-size: 20px; letter-spacing: 2px;"><u>Resend Verification Link</u></a>
+                    <br>
+                    <button class="submit" onclick="location.href='http://localhost/GroupProject/login_page.html'" type="button" style="margin-top: 25px; width: 70%; font-size: 16px; height:fit-content; padding: 10px; border-radius: 50px;">CONFIRM</button>
+                </div>
+            </div>
+            <div class="col-3"><br></div>
+        </div>
+    </body>
+
+    <div class="particles">
+        <div class="space">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            
+          </div>
+    </div>
+
+    <script>
+        function message() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const email = urlParams.get('email');
+            window.alert("A new verification link has been sent to " + email + ".");
+        }
+    </script>
+</html>
